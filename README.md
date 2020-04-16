@@ -7,7 +7,7 @@
 In this work we generalize butterfly operation in FFT to a general Butterfly Transform(BFT) that is beneficial in building efficient block structure for CNN designs. BFT fuses information among set of n inputs in O(n log(n)) in comparision to full matrix multiplication that does this in O(n^2).
 This enabled us to use BFT as a drop-in replacement of pointwise convolution which is the bottleneck of s.o.t.a efficient architectures(MobileNet, ShuffleNet).
 
-//TODO: IMAGE
+This is the performance of using BFT vs Pointwise convolutions on low flop regime for efficient structures.
 ![alt text](figs/bft_vs_pointwise.png "BFT performance on low flop regime")
 
 ## Usage
