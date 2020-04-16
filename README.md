@@ -8,6 +8,7 @@ In this work we generalize butterfly operation in FFT to a general Butterfly Tra
 This enabled us to use BFT as a drop-in replacement of pointwise convolution which is the bottleneck of s.o.t.a efficient architectures(MobileNet, ShuffleNet).
 
 //TODO: IMAGE
+![alt text](figs/bft_vs_pointwise.png "BFT performance on low flop regime")
 
 ## Usage
 
@@ -22,4 +23,12 @@ For a better performance we suggest to increase the number of channels while usi
 
 If you found this work useful please cite us.
 
-//TODO: citation
+// TODO: new citation after new arxiv version
+```
+@article{alizadeh2019butterfly,
+  title={Butterfly Transform: An Efficient FFT Based Neural Architecture Design},
+  author={Alizadeh, Keivan and Farhadi, Ali and Rastegari, Mohammad},
+  journal={arXiv preprint arXiv:1906.02256},
+  year={2019}
+}
+```
