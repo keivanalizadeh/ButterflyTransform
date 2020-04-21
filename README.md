@@ -1,7 +1,7 @@
 # ButterflyTransform
-[1] Keivan Alizadeh vahid, Anish Prabhu, Ali Farhadi, Mohammad Rastegari. **Butterfly Transform: An Efficient FFT Based Neural Architecture Design**. CVPR 2020
+[1] Keivan Alizadeh vahid, Anish Prabhu, Ali Farhadi, Mohammad Rastegari. **Butterfly Transform: An Efficient FFT Based Neural Architecture Design**. to be appeared in CVPR 2020.
 	
-	Arxiv Link: https://arxiv.org/abs/1906.02256
+[Arxiv link](https://arxiv.org/abs/1906.02256).
 
 ## About the model
 
