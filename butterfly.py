@@ -5,6 +5,7 @@ from torch.nn.parameter import Parameter
 import torch
 
 from os import path
+import os
 import torch.nn.functional as F
 
 
@@ -19,7 +20,10 @@ class Butterfly_general_matrix(nn.Conv2d):
     This class implements a butterfly transform as a matrix multiplication.
     '''
     # Base directory for caching graph computation
+    
     _BASE_DIR = "cplex"
+    if not os.path.exists(_BASE_DIR):
+        os.makedirs(_BASE_DIR)
 
     def __init__(self, in_channels, out_channels, butterfly_K=4, residual_method="no_residual", fan_degree=0):
         '''
@@ -32,7 +36,7 @@ class Butterfly_general_matrix(nn.Conv2d):
         '''
         super().__init__(in_channels, out_channels, kernel_size=1, stride=1, padding=0, dilation=1, groups=1,
                          bias=False)
-        del self.weight
+
         self.residual_method = residual_method
         n = max(in_channels, out_channels)
         power = int(math.ceil(math.log(butterfly_K)))
